@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.navbar{
+ margin-bottom: 30px;
+ background-color: #ffffff;
+ height: 60px;
+}
+.navbar .logo{
+    padding: 30px;
+}
+.navbar .right-nav{
+    position:absolute; 
+    right:0;
+}
+.navbar .download-button{
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    float:left;
+    font-weight: 600;
+    font-size: 12px;
+}
+.navbar .download-button:hover{
+    background-color: #f6f6f6;
+}
+.navbar .profile-icon{
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 50%;
+    float:left;
+    margin: 0 15px; /*needto show*/
+    color: #87ceeb;
+    background-color: rgb(135,206,235, 0.2);
+    font-weight: 600;
+    font-size: 12px;
+}
+.container-fluid{
+   background-color: #f6f6f6;
+   min-height: 100vh;
+   font-family: 'Montserrat'
+}
+.main-content{
+    text-align: center;
+    height: auto;
+}
+.main-content .titleBar{
+    text-align: center;
+    font-size: 36px;
+    padding: 50px 50px 78px 50px;
+    color: #888888;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.main-content .cardMainWrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-content .cardWrapper{
+    margin: 0 -5px;
+}
+.main-content .displayCards{
+    width: 25%;
+    text-align: center;
+    float: left;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.main-content .displayCards .inner{
+    background-color: #fff;
+    padding: 60px 30px 36px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.main-content .displayCards .inner:hover{
+    margin-top: 0px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+     -ms-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+         transition: all 0.5s ease-out;
+}
+.inner:hover .hover-text{
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+     -ms-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+         transition: all 0.5s ease-out;
+}
+.main-content .displayCards .iconCircle{
+    border: 3px solid;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin:0 auto;
+    font-size: 33px;
+    font-weight: 200;
+}
+.main-content .displayCards .iconCircle.brown{
+    border-color: #E48464;
+    color: #E48464;
+}
+.main-content .displayCards .iconCircle.green{
+    border-color: #009E60;
+    color: #009E60;
+}
+.main-content .displayCards .iconCircle.purple{
+    border-color: #BF40BF;
+    color: #BF40BF;
+}
+.main-content .displayCards .iconCircle.light-green{
+    border-color: #87ceeb;
+    color:#87ceeb;
+}
+.displayCards .card-text{
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 14px;
+}
+.displayCards .hover-text{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888888;
+    opacity: 0;
+    max-width: 200px;
+    padding: 0px 10px;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #aeaeae;
+}
+.footer .copyright{
+    float: left;
+    padding: 0 20px;
+}
+.footer .menu{
+    float: left;
+    padding: 0 5px;
+}
