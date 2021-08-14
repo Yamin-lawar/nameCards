@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.main-container{
+    background-color: #80B3FF;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container .container{
+    width:600px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-container .container .image-container{
+    position: relative;
+}
+.main-container .container .image-container img{
+    width: 100%;
+    height: auto;
+}
+.main-container .image-container .text-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translateX(-50%) translateY(-50%); -o-transform:translateX(-50%) translateY(-50%); -webkit-transform:translateX(-50%) translateY(-50%); -o-transform:translateX(-50%) translateY(-50%); -ms-transform:translateX(-50%) translateY(-50%); -moz-transform:translateX(-50%) translateY(-50%);
+}
+.main-container .image-container .text-container{
+    color: #ffffff;
+    outline: 5px solid white;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    backdrop-filter: blur(5px);
+    font-weight: 700;
+    font-size: 30px;
+}
+.main-container .container .white-container{
+    width: 550px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 6px;
+    margin-top: -70px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.main-container .container .white-container .boxes{
+    position: relative;
+}
+
+.main-container .container .white-container .boxes::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background-color: #C0C0C0;
+    right: -60px;
+    top: 40%;
+    flex: 0 1 33.3%;
+}
+
+.main-container .container .white-container .boxes .box-label{
+    margin-bottom: 10px;
+    color: #C0C0C0;
+}
+
+.main-container .container .white-container .boxes .box-value{
+    font-weight: 600;
+}
+
+.main-container .container .white-container .location{
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -21px;
+}
+
+.main-container .container .white-container .location .location-child{
+    padding: 15px;
+    width: 170px;
+    text-align: center;
+    border-radius: 30px;   
+    background-color: #659FFF;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.main-container .container .white-container .location .location-child .location-icon{
+    height: 10px;    
+}
