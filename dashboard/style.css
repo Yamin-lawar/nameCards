@@ -75,7 +75,7 @@ table {
 	text-align: center;
 }
 .first-part .card-container .card{
-	width: 300px;
+	/* width: 300px; */
 	margin-right: 30px;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -174,12 +174,12 @@ table {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	/* align-items: center; */
-	margin-right: 10px;
+	/* margin-right: 10px; */
 }
 .container .widget-container .widget-card{
 	width: 47%;
-	height: auto;
-	padding: 0 5px 5px;
+	height: 76px;
+	padding: 9px 5px 10px;
 	border-radius: 5px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	margin-bottom: 25px;
@@ -190,6 +190,7 @@ table {
 .container .widget-container .widget-card .widget-card-content{
 	display: flex;
 	align-items: center;
+	height: 65px;
 }
 .container .widget-container .widget-card .widget-card-content .widget-left{
 	padding: 5px 15px;
@@ -215,7 +216,7 @@ table {
 }
 .container .widget-container .widget-card .widget-card-content .widget-right{
 	text-align: left;
-	padding: 15px 5px;
+	/* padding: 15px 5px; */
 }
 .container .widget-container .widget-card .widget-card-content .widget-right .widget-message{
 	font-size: 15px;
@@ -232,8 +233,10 @@ table {
 /*second part*/
 .container .second-part{
 	display: flex;
-	padding: 50px 20px;
+	padding: 50px 0px;
 	justify-content: space-between;
+	column-spacing: 10px;
+	column-gap: 30px;
 }
 .container .second-part .reciept{
 	width: 33.33%;
@@ -244,7 +247,7 @@ table {
 	padding-bottom: 136px;
 }
 .container .second-part .players{
-	width: 30%;
+	width: 33.3%;
 	background-color: #ffffff;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
