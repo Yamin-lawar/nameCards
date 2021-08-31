@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+	background: rgb(119,110,255);
+background: linear-gradient(125deg, rgba(119,110,255,1) 0%, rgba(250,107,123,1) 63%, rgba(240,121,81,1) 100%);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.login-box{
+	width: 70%;
+	background-color: #ffffff;
+	height: 500px;
+	box-shadow: 17.5px 30.311px 28.56px 5.44px rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+	display: flex;
+	padding: 50px;
+}
+
+
+.login-box .login-left{
+	width: 50%;
+}
+
+.login-box .login-right{
+	width: 50%;
+}
+
+.login-box .login-left .login-title{
+	font-size: 28px;
+	font-weight: 600;
+	padding: 20px;
+	text-align: center;
+}
+.login-box .login-left .field-container{
+	padding: 10px 70px;
+}
+.login-box .login-left .fields .label{
+	font-size: 14px;
+	color: #5d6166;
+	padding: 3px 0px;
+}
+.fields{
+	padding-bottom: 10px
+}
+.login-box .login-left .fields input[type=text]{
+	outline: 0;
+	width: 100%;
+  	border-width: 0 0 2px;
+  	border-color: #8279ff;
+	font-size: 17px;
+	padding: 10px 0px;
+	font-weight: 600;
+}
+.login-button{
+	width: 100%;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #8279ff;
+	color: #ffffff;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+	box-shadow: rgba(165, 118, 118, 0.45) 15px 25px 15px -10px;
+	margin-top:20px
+}
+.login-box .login-left .forgot-password{
+	text-align: center;
+	padding: 30px 0px 20px 0px;
+	color: #000000;
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.login-box .login-left .no-account{
+	font-size: 14px;
+	color: #a0a4a6;
+	font-weight: 600;
+	text-align: center;
+}
+.login-box .login-left .no-account .sign-up-span{
+	color: #8279ff;
+}
+.login-box .login-right .image-box img{
+	object-fit: contain;
+	width: 100%;
+}
